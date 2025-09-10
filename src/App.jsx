@@ -4,13 +4,12 @@ import viteLogo from "/vite.svg";
 import "./App.scss";
 import Taken from "./assets/Taken.jpeg";
 import Gladitorimg from "./assets/gladiator.jpeg";
-import Map_Practice from "./Components/Map_Practice.jsx";
 import axios from "axios";
 
 function App() {
   const [Movies, setMovies] = useState([]);
   const [query, setQuery] = useState("");
-  const Api_Read_Acess_Token = import.meta.env.VITE_Movie_Access_Token;
+  const Api_Read_Acess_Token = import.meta.env.VITE_Api_Read_Acess_Token;
   const apiCalling = async () => {
     try {
       const res = await axios.get(
