@@ -10,14 +10,14 @@ import axios from "axios";
 function App() {
   const [Movies, setMovies] = useState([]);
   const [query, setQuery] = useState("");
+  const Api_Read_Acess_Token = import.meta.env.VITE_Movie_Access_Token;
   const apiCalling = async () => {
     try {
       const res = await axios.get(
         `https://api.themoviedb.org/3/search/movie?query=${query}`,
         {
           headers: {
-            Authorization:
-              "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJhYjQ4OGRiN2JiNDc5MmEyZTNmNDdkZDkzZTkzZGQ1OSIsIm5iZiI6MTc1NzQzMzUzMy4yNzYsInN1YiI6IjY4YzA0ZWJkNWM3NzQ4MzBiMjFmNWNlOCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.943EGUvrkRKZroPz3CGYJ31sQ58v0vBBEyuMGTiI_Jo",
+            Authorization: `Bearer ${Api_Read_Acess_Token}`,
             Accept: "application/json",
           },
         }
