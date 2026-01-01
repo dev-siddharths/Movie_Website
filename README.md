@@ -1,12 +1,95 @@
-# React + Vite
+# 🎬 Movie Search
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+*A simple movie browsing app built to practice CSS Grid & API fetching.*
 
-Currently, two official plugins are available:
+Movie Search is a React-based web app that fetches live movie data from the **TMDB API** and displays results in a responsive **CSS Grid layout**. This project was mainly built to practice working with API integration, grids, responsive design, and component structure in React.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Live Demo
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🔗 **[https://movie-website-sepia-six.vercel.app](https://movie-website-sepia-six.vercel.app)**
+
+---
+
+## ✨ Features
+
+* 🔍 **Search Movies** using TMDB API
+* 🎬 **Grid-based movie cards** (pure CSS layout)
+* 🖼️ Posters, titles & overview (based on API response)
+* 📱 **Responsive design** — adjusts layout on different screen sizes
+* ⚛️ **React + Pure CSS** (no UI libraries)
+
+---
+
+## 🛠️ Tech Stack
+
+| Area       | Technology          |
+| ---------- | ------------------- |
+| Frontend   | React (Vite or CRA) |
+| Styling    | Pure CSS + CSS Grid |
+| API        | TMDB API            |
+| Deployment | Vercel              |
+
+---
+
+## 📂 Folder Structure
+
+```
+Movie-Search/
+ ├── public/
+ ├── src/
+ │   ├── components/
+ │   ├── pages/
+ │   ├── App.jsx
+ │   ├── index.css
+ ├── package.json
+ ├── README.md
+```
+
+---
+
+## 🔑 Environment Setup
+
+Create a `.env` file and add your TMDB API key:
+
+```
+VITE_TMDB_API_KEY=your_api_key_here
+```
+
+---
+
+## 📦 Installation & Run
+
+```bash
+# Clone the repo
+git clone https://github.com/dev-siddharths/Movie_Website.git
+
+# Go inside project
+cd Movie_Website
+
+# Install dependencies
+npm install
+
+# Start local development
+npm run dev
+```
+
+---
+
+## 📌 Purpose of This Project
+
+This project was created **to practice CSS Grid** and learn how to handle:
+
+* API requests and responses
+* Component-based UI structure
+* Responsive movie card layout
+* Working with environment variables in React
+
+---
+
+
+## 📧 Contact
+
+If you'd like to connect or review my work:
+**GitHub:** dev-siddharths
